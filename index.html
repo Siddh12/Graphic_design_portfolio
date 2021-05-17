@@ -1,27 +1,72 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>graphicPortfolio</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <img src="Name.png" alt="name" class="name">
-            <div class="header">
-                 <div>ABOUT</div>
-                 <div>HOME</div>
-                 <div>CONTACT</div>
-                 <div>HELP</div>
-            </div>
-            <img src="Space Rocket..jpg" alt="spacerocket" class="spacerocket">
-            <img src="light bulb.jpg" alt="lightBulb" class="lightBulb">
-            <img src="Lamp.jpg" alt="Lamp" class="lamp">
-            <img src="Sunset-01.jpg" alt="Sunset" class="Sunset">
-            <img src="Wine Glass. final with text.jpg" alt="Wineglass" class="wineglass">
-            
-            
-        </body>
-        <script src="app.js"></script>
-    </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .left{
+            height: 100vh;
+            width: 400px;
+            background-color: #292827;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            box-shadow: 5px 0px 50px;
+            display: flex;
+            align-items: center;
+
+        }
+        .right{
+            height: 100vh;
+            width: 1135px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 0px;
+            left: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .right>img:hover{
+            box-shadow: 5px 5px 20px; 
+        }
+        .header{
+            background-color: orange;
+            position: relative;
+            z-index: 1;
+            margin: 40px;
+            display: flex;
+            justify-content: center;   
+        }
+        .header>div{
+            padding: 20px;
+            color: papayawhip;
+            border: 1px solid orange;
+            border-radius: 20px;
+            text-transform: capitalize;
+        }
+        .header>div:hover{
+            color: #292827;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="right">
+        <img src="Sunset-01.jpg" alt="img" width="600px">
+    </div>
+    <div class="left">
+     <img src="Name.png" alt="namne" width="400px">
+    </div>
+    <div class="header">
+        <div class="">about</div>
+        <div class="">Product</div>
+        <div class="">services</div>
+        <div class="">help</div>
+        <div class="">contact</div>
+    </div>
+    
+</body>
+</html>
